@@ -1,0 +1,13 @@
+header{
+   color: rgb(24, 6, 56);
+   background-color: aqua;
+}
+
+/* Start section Info */
+
+.info {
+   position:absolute url(/img/promo.png)
+}
+.info-title { 
+   color: blanchedalmond;
+}
