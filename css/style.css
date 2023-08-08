@@ -1,13 +1,94 @@
-header{
-   color: rgb(24, 6, 56);
-   background-color: aqua;
+/* Шрифты */
+/* montserrat-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/montserrat-v25-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* montserrat-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/montserrat-v25-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
-/* Start section Info */
+/* oswald-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/oswald-v49-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* oswald-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/oswald-v49-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* общие стили */
+body{
+  font-family: 'Montserrat', sans-serif;
+ font-weight:500;
+}
+
+/* шапка сайта */
+
+.header{
+  background-color: #66D1FF;
+  }
+
+  .btn{
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  line-height: 29px;
+  }
+  .tel{
+  text-align: center;
+  font-size: 28px;
+  font-style: normal;
+  line-height: 34px;
+  }
+
+/* блок info */
 
 .info {
-   position:absolute url(/img/promo.png)
+   background-image: url(/img/promo.jpg);
+/* display: flex;
+width: 1440px;
+height: 766px;
+padding: 240px 81px 260px 81px;
+flex-direction: column;
+align-items: center;
+gap: 60px; */
+
+   color: #FFF;
+text-align: center;
+text-shadow: 1px 1px 2px #060D10;
 }
-.info-title { 
-   color: blanchedalmond;
+
+.info-title{
+font-family: Oswald;
+font-size: 60px;
+font-style: normal;
+font-weight: 500;
+line-height: 89px;
+text-transform: uppercase;
 }
+.info-desc{
+  color: #FFF;
+text-align: center;
+text-shadow: 1px 1px 2px #060D10;
+font-size: 32px;
+font-style: normal;
+line-height: 39pxl;
+}
+
