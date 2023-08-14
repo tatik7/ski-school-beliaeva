@@ -51,9 +51,27 @@ body{
 .header{
   background-color: #66D1FF;
  height: 112px;
+   text-decoration: none;
+ 
   }
 
+  .header-wrap{
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+text-decoration: none;
+}
+
+.header-logo{
+   color: #060D10;
+  display: flex;
+   margin: 0;
+    padding: 10px;
+    list-style: none;
+}
+
   .btn{
+     color: #060D10;
   text-align: center;
   font-size: 24px;
   font-style: normal;
@@ -64,11 +82,14 @@ background: #FFF;
   }
 
   .tel{
+     color: #060D10;
   text-align: center;
   font-size: 28px;
   font-style: normal;
   line-height: 34px;
   }
+
+
 
 /* блок info */
 
@@ -118,9 +139,30 @@ line-height: 167%; /* 80.16px */
 text-transform: uppercase;
 }
 
+.desc-wrap{
+     display: flex;
+  justify-content: space-around;
+  align-items: center;
+list-style: none;
+flex-wrap: wrap;
+}
+
+.desc-list{
+
+}
+
+.desc-text{
+border: 1px solid blue;
+}
+
 /* блок lead */
 
 .lead{
+  text-align: center;
+
+}
+
+.lead-title{
   text-align: center;
 font-family: Oswald;
 font-size: 48px;
@@ -129,9 +171,23 @@ font-weight: 500;
 line-height: 167%; /* 80.16px */
 text-transform: uppercase;
 padding: 395px 170px;
+
+}
+
+.a.btn{
+  width: 505px;
+height: 86px;
+border-radius: 4px;
+border: 3px solid #060D10;
 }
 
 /* блок img */
+
+.img-wrap{
+display: flex;
+
+}
+
 .img-ski{
   width: 297px;
 height: 297px;
