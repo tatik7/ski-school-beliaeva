@@ -1,101 +1,116 @@
 /* Шрифты */
-/* montserrat-regular - latin */
+
+/* montserrat-regular - cyrillic_latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/montserrat-v25-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-/* montserrat-500 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 500;
-  src: url('../fonts/montserrat-v25-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../fonts/montserrat-v25-cyrillic_latin-regular.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
-/* oswald-regular - latin */
+/* montserrat-500 - cyrillic_latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/montserrat-v25-cyrillic_latin-500.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* oswald-regular - cyrillic_latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Oswald';
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/oswald-v49-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../fonts/oswald-v49-cyrillic_latin-regular.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-/* oswald-500 - latin */
+
+/* oswald-500 - cyrillic_latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Oswald';
   font-style: normal;
   font-weight: 500;
-  src: url('../fonts/oswald-v49-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('../fonts/oswald-v49-cyrillic_latin-500.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* общие стили */
-body{
+body {
   font-family: 'Montserrat', sans-serif;
- font-weight:500;
- box-sizing: border-box;
+  font-weight: 500;
+  box-sizing: border-box;
 }
 
-.container{
+.container {
   width: 1440px;
-   border: 1px solid red;
+  border: 1px solid red;
   margin: 0 auto;
 }
 
 /* шапка сайта */
 
-.header{
+.header {
   background-color: #66D1FF;
- height: 112px;
-   text-decoration: none;
- 
-  }
+  text-decoration: none;
 
-  .header-wrap{
-    display: flex;
+}
+
+.header-wrap {
+  display: flex;
   justify-content: space-between;
   align-items: center;
-text-decoration: none;
+  text-decoration: none;
 }
 
-.header-logo{
-   color: #060D10;
+.header-logo {
+  color: #060D10;
   display: flex;
-   margin: 0;
-    padding: 10px;
-    list-style: none;
+  margin: 0;
+  padding: 10px;
+  list-style: none;
 }
 
-  .btn{
-     color: #060D10;
+.btn {
+  color: #060D10;
   text-align: center;
   font-size: 24px;
   font-style: normal;
   line-height: 29px;
   border-radius: 4px;
-border: 2px solid #FFF;
-background: #FFF;
-  }
+  border: 2px solid #FFF;
+  background: #FFF;
+  text-decoration: none;
+}
 
-  .tel{
-     color: #060D10;
+.tel {
+  color: #060D10;
   text-align: center;
   font-size: 28px;
   font-style: normal;
   line-height: 34px;
-  }
-
+  text-decoration: none;
+}
 
 
 /* блок info */
 
 .info {
-   background-image: url(/img/promo.png);
-/* display: flex;
+  background-image: url(../img/promo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  /* display: flex;
 width: 1440px;
 height: 766px;
 padding: 240px 81px 260px 81px;
@@ -103,21 +118,21 @@ flex-direction: column;
 align-items: center;
 gap: 60px; */
 
-   color: #FFF;
-text-align: center;
-text-shadow: 1px 1px 2px #060D10;
+  color: #FFF;
+  text-align: center;
+  text-shadow: 1px 1px 2px #060D10;
 }
 
-.info-title{
-font-family: Oswald;
-font-size: 60px;
-font-style: normal;
-font-weight: 500;
-line-height: 89px;
-text-transform: uppercase;
+.info-title {
+  font-family: Oswald;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 89px;
+  text-transform: uppercase;
 }
 
-.info-desc{
+.info-desc {
   color: #FFF;
   text-align: center;
   text-shadow: 1px 1px 2px #060D10;
@@ -128,79 +143,113 @@ text-transform: uppercase;
 
 /* блок desc */
 
-.desc-title{
+.desc-title {
   color: #060D10;
-text-align: center;
-font-family: Oswald;
-font-size: 48px;
-font-style: normal;
-font-weight: 500;
-line-height: 167%; /* 80.16px */
-text-transform: uppercase;
+  text-align: center;
+  font-family: Oswald;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 167%;
+  /* 80.16px */
+  text-transform: uppercase;
 }
 
-.desc-wrap{
-     display: flex;
+.desc-list {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-list-style: none;
-flex-wrap: wrap;
+  list-style: none;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
-.desc-list{
-
+.desc-caption {
+  color: #060D10;
+  font-family: Oswald;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 167%;
+  /* 53.44px */
+  text-transform: uppercase;
 }
 
-.desc-text{
-border: 1px solid blue;
+.desc-item {
+  flex-basis: calc(30% - 15px);
+  color: #060D10;
+  font-size: 26px;
+  font-style: normal;
+  line-height: 140%;
+  /* 36.4px */
+}
+
+.desc-text {
+  border: 1px solid blue;
 }
 
 /* блок lead */
 
-.lead{
+.lead {
   text-align: center;
 
 }
 
-.lead-title{
+.lead-title {
+  color: #060D10;
   text-align: center;
-font-family: Oswald;
-font-size: 48px;
-font-style: normal;
-font-weight: 500;
-line-height: 167%; /* 80.16px */
-text-transform: uppercase;
-padding: 395px 170px;
+  font-family: Oswald;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 167%;
+  /* 80.16px */
+  text-transform: uppercase;
+  padding: 170px 395px;
 
 }
 
-.a.btn{
+.btn.lead {
   width: 505px;
-height: 86px;
-border-radius: 4px;
-border: 3px solid #060D10;
+  height: 86px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 3px solid #060D10;
+  text-decoration: none;
 }
 
-/* блок img */
-
-.img-wrap{
-display: flex;
-
+.img-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  flex-wrap: wrap;
 }
 
-.img-ski{
+.img-ski {
   width: 297px;
-height: 297px;
-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-padding: -25%;
+  height: 297px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: -25%;
 }
 
 /* подвал */
-.footer{
+.footer {
   height: 111px;
   background: #060D10;
+  flex-shrink: 0;
   color: #FFF;
-text-align: center;
-font-size: 20px;
-line-height: 167%; /* 33.4px */
+  text-align: center;
+  font-size: 20px;
+  line-height: 167%;
+  /* 33.4px */
+}
+
+.footer-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
