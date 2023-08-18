@@ -49,6 +49,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   box-sizing: border-box;
+  margin: 0 auto;
 }
 
 .container {
@@ -124,15 +125,21 @@ gap: 60px; */
 }
 
 .info-title {
+  padding-top: 240px;
   font-family: Oswald;
   font-size: 60px;
   font-style: normal;
   font-weight: 500;
   line-height: 89px;
   text-transform: uppercase;
+  color: #FFF;
+  text-align: center;
+  text-shadow: 1px 1px 2px #060D10;
 }
 
 .info-desc {
+  width: 1060px;
+  margin: 240px auto 260px;
   color: #FFF;
   text-align: center;
   text-shadow: 1px 1px 2px #060D10;
